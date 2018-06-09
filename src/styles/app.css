@@ -1,13 +1,23 @@
 .app {
     display: grid;
     grid-template-columns: 50% 50%;
+    min-height: 100vh;
 }
 
 .app > section {
     padding: 2em;
 }
 
+section.wizard {
+    box-shadow: 0 0 5em black;
+}
+
 section.output {
+    background: #ddd;
+    color: #666;
+}
+
+section.output p.text-wrapper {
     display: flex;
     flex-wrap: wrap;
 }

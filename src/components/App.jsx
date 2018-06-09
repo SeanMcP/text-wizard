@@ -29,6 +29,7 @@ class App extends Component {
                 <section className="wizard">
                     <h1>Text Wizard</h1>
                     <Input
+                        clear={this._clearSelectedWiz}
                         name="first_name"
                         onChange={this._handleInput}
                         select={this._handleSelectWiz}
@@ -37,10 +38,14 @@ class App extends Component {
                     <p>{this.state.selectedWiz}</p>
                 </section>
                 <section className="output">
-                    <p>{this._renderText()}</p>
+                    <p className="text-wrapper">{this._renderText()}</p>
                 </section>
             </div>
         );
+    }
+
+    _clearSelectedWiz = () => {
+        this.setState({ selectedWiz: '' });
     }
 
     _convertRawString = (string) => {
