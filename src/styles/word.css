@@ -1,0 +1,11 @@
+.word {
+    padding: 0.1em;
+}
+
+.word:not(:last-of-type) {
+    margin-right: 0.05em;
+}
+
+.word:hover {
+    background: yellow;
+}

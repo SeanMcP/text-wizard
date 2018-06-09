@@ -1,4 +1,6 @@
 @import 'reset.css';
+/* ============== */
+@import 'word.css';
 
 body {
   margin: 0;
