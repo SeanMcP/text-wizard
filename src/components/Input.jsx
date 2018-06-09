@@ -12,13 +12,16 @@ const Input = props => {
                 value={props.state[name]}
             />
             <button onClick={() => props.select(name)}>Add</button>
+            <button onClick={props.clear}>Done</button>
         </div>
     );
 }
 
 Input.propTypes = {
+    clear: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
+    select: PropTypes.func.isRequired,
     state: PropTypes.object.isRequired,
 };
 
