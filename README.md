@@ -18,6 +18,7 @@ I want to generate a similar text based on a few simple inputs. In order to do s
 These wizard fields will have a corresponding input fields that will be used to generate a new text.
 
 Input | Value
+----- | -----
 Day | Last Tuesday
 Name | Eleanor Roosevelt
 Event | a movie
