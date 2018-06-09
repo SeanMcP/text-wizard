@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 const Word = props => (
     <span
         className="word"
+        id={props.id}
+        onClick={props.handleClick}
     >
-        {props.display || props.original}
+        {props.value || props.original}
     </span>
 );
 
 Word.propTypes = {
-    display: PropTypes.string.isRequired,
+    value: PropTypes.string,
+    handleClick: PropTypes.func.isRequired,
     id: PropTypes.string.isRequired,
     original: PropTypes.string.isRequired,
 };

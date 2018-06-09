@@ -1,5 +1,7 @@
 @import 'reset.css';
 /* ============== */
+@import 'app.css';
+@import 'input.css';
 @import 'word.css';
 
 body {
